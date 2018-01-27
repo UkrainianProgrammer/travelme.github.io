@@ -1,0 +1,83 @@
+\documentclass[12pt]{report}
+%\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\graphicspath{.}
+\usepackage{fullpage}
+
+\title{CSCE 315 \\ Team Retrospective}
+\author{Oscar Reyes,\\
+	James Corder Guy,\\
+	Oleksandr Sofishchenko}
+\date{April 26, 2017}
+
+\begin{document}
+	
+	\maketitle
+	
+	\newpage
+	
+	%Summary of project performance---------------------------------------------------
+	\begin{center}
+		\title{\textbf{Summary of Project Performance}} \\
+	\end{center}
+	
+	Our goal for this project was to implement an improved version of the Texas A\&M bus route website. We wanted to give it more functionality, make the interface nicer, and improve performance. \\
+	
+    We improved the map by using the Google Maps API. This allowed us to show points of interest in relation to the various bus routes, allowing users to find the route nearest the location they want to go. We overlayed the bus routes on the map, and also placed markers for the user's location and for the bus stops of the selected route. We showed the location of each bus on the selected route with maroon arrows, and those locations update automatically every 15 seconds. We displayed all departure and arrival times for the selected route in a table, which can be expanded and hidden by the user as is convenient. For each stop on the currently selected route, the user can click on the marker to display the name of the stop, as well as a Google Street View image of the location, to allow the stops to be more easily found. \\
+	
+    One stretch goal that we were not able to implement was an indication that a particular bus was running early or late, in relation to the scheduled times for the route. \\
+
+    We encountered several challenges during our work on this project. To begin, we needed to identify the usage of the TAMU transportation API, which we did not initially have documentation for. To solve this, we used our brower's inspection tools to identify the API calls sent by the offical TAMU bus app, and copied those for our own app's use. We also needed to become familiar with the Google Maps and the Google Street View APIs, as none of the team members had used those tools in the past. \\
+
+    We made several changes to the UI of the app, including making the timetable button scroll with the page, as well as moving the button to the top, rather than the corner, of the screen. \\
+	
+	The user evaluation was moderately effective. We received some useful feedback on ways to improve our website, but it would have been useful to have multiple user studies throughout the course of the project, so that UX changes that we made could be evaluated throughout. A larger sample size would also have been beneficial. \\
+	
+	We decided to divide the project into three sets of responsibilities. Oleksandr S. was in charge of the front-end development of the website, while James C. Guy was in charge of the back-end development. Oscar R. was the project manager, and wrote the reports that were turned in. He managed the backlog and turned in any submissions that were to be made, as well as kept track of the project and paperwork.
+
+
+
+	%Multipliers--------------------------------------------------------------------------
+	\begin{center}
+		\title{\textbf{Multipliers}} \\
+	\end{center}
+	The project was divided into parts from the very beginning and we all agreed to do a specific task. Each person successfully met their assigned task and so we decided that the multipliers will be as follows:\\
+	James Corder Guy: 1.0\\
+	Oleksandr Sofishchenko: 1.0\\
+	Oscar Reyes: 1.0\\
+
+
+	%Instructions for Use----------------------------------------------------------------
+	\begin{center}
+		\title{\textbf{Instructions for Use of Website}} \\
+	\end{center}
+	\noindent
+    In order to access our website please go to the following address: \texttt{https://corder.tech/}.\\
+	
+    The initial view is of the title page for our website, along with our team information. By clicking "Explore", the page will scroll down to the route selection. From there, any route may be selected, and, after a short delay, the page will scroll down to the map with the route and associated stops and buses displayed. If another route is selected, the currently displayed route will be replaced. \\
+
+    Once the desired route is displayed, the individual stops can be clicked on, displaying the name of each stop as well as a Street View image of the location. The Timetable button, at the top of the screen, can also be clicked, displaying a table with the timepoints for the route, as well as the times at which a bus is scheduled to arrive at or depart from that stop. While the route is displayed, the buses will update their positions automatically, at an interval of 15 seconds. \\
+	
+
+    \begin{center}
+		\title{\textbf{APIs Used}} \\
+	\end{center}
+
+    In our project, we used several different APIs and frameworks. We used the Google Maps API to display the map, routes, buses, and stops, and the TAMU Transportation API to retrieve those locations. We used the proj4 Javascript library to convert between the projection coordinates that the Transportation API used and the latitude and longitude that the Google Maps API expected. The Google Street View API provided the images for the stops. We used JQuery to make requests to each of these APIs. The layout of the website incorporates elements from the W3 Schools HTML and CSS tutorials. \\
+
+	%Contact Info-----------------------------------------------------------------------
+	\begin{center}
+		\title{\textbf{Contact Information}} \\
+	\end{center}
+
+	\noindent
+	Name: James Corder Guy\\
+	Email: corder@tamu.edu\\
+	Times Available on Wednesday: 10:00 AM - 7:00 PM\\
+	\newpage
+	
+	
+	
+	
+\end{document}

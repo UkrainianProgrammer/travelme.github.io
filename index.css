@@ -1,0 +1,21 @@
+/*Add style to the content*/
+
+body, html {
+	height: 100%;
+	color: #777;
+	line-height: 1.8;
+}
+
+/* Make cover image span the entire page */
+.img-1 {
+	/*background-attachment: fixed;*/
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+/* Cover pic, continued */
+.img-1 {
+	background-image: url("images/maroon_back2.png");
+	min-height: 100%;
+}
