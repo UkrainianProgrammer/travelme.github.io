@@ -1,21 +1,24 @@
-/*Add style to the content*/
-
-body, html {
-	height: 100%;
-	color: #777;
-	line-height: 1.8;
+body {
+    margin: 0;
+    font-family: Arial;
+    font-size: 17px;
 }
 
-/* Make cover image span the entire page */
-.img-1 {
-	/*background-attachment: fixed;*/
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
+#myVideo {
+    position: relative;
+    bottom: 0%;
+    left: 0%;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    background: #000;
 }
 
-/* Cover pic, continued */
-.img-1 {
-	background-image: url("images/maroon_back2.png");
-	min-height: 100%;
+.content {
+    position: fixed;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 100%;
+    padding: 50px;
 }
